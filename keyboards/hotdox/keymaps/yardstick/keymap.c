@@ -22,7 +22,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |--------+------+------+------+------+------|   [  |           |  ]   |------+------+------+------+------+--------|
  * | lS/ (  |   z  |   x  |   c  |   v  |   b  |      |           |      |   n  |   m  |   ,  |   .  |   /  | rS/ (  |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
- *   |  `   |  '"  |AltShf| Left | Right|                                       | Left |  Up  | Down | Right|  =   |
+ *   |  `   |  '"  |AltShf| Left | Right|                                       | Left | Down |  Up  | Right|  =   |
  *   `----------------------------------'                                       `----------------------------------'
  *                                        ,-------------.       ,---------------.
  *                                        | LGui |App/ M|       | M    | Esc/ C |
@@ -50,7 +50,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
              TG(SYMB),    KC_Y,   KC_U,   KC_I,    KC_O,   KC_P,             LALT_T(KC_BSLS),
                           KC_H,   KC_J,   KC_K,    KC_L,   KC_SCLN,          CTL_T(KC_QUOT),
              KC_RBRC,     KC_N,   KC_M,   KC_COMM, KC_DOT, KC_SLSH,          KC_RSPC,
-                                  KC_LEFT,KC_KC_UP,KC_DOWN,KC_RIGHT,         KC_EQL,
+                                  KC_LEFT,KC_DOWN,  KC_UP, KC_RIGHT,         KC_EQL,
 
              KC_LALT,        CTL_T(KC_ESC),
              KC_PGUP,
