@@ -25,9 +25,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *   |  `   | Home | PgDn | PgUp | End  |                                       | Left | Down |  Up  | Right|  =   |
  *   `----------------------------------'                                       `----------------------------------'
  *                                        ,-------------.       ,---------------.
- *                                        | LGui |App/ M|       | M    | Esc/ C |
+ *                                        | App  |App/ M|       | M    | Esc/ C |
  *                                 ,------|------|------|       |------+--------+------.
- *                                 |      |      | Home |       | PgUp |        |      |
+ *                                 |      |      | LGui |       | LGui |        |      |
  *                                 |  Bck |Spc/lM|------|       |------| Tab/rS |Etr/rM|
  *                                 |      |      | End  |       | PgDn |        |      |
  *                                 `--------------------'       `----------------------'
@@ -41,8 +41,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_LSPO,         KC_Z,         KC_X,   KC_C,   KC_V,   KC_B,   KC_LBRC ,
         KC_GRV,          KC_HOME,      KC_PGDN,  KC_PGUP, KC_END,
 
-                                                      KC_LGUI, ALT_T(KC_APP),
-                                                               KC_HOME,
+                                                      KC_APP, ALT_T(KC_APP),
+                                                               KC_LGUI,
                                       KC_BSPC, ALT_T(KC_SPC),  KC_END,
 
         // right hand
@@ -53,7 +53,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                   KC_LEFT,KC_DOWN,  KC_UP, KC_RIGHT,         KC_EQL,
 
              KC_LALT,        CTL_T(KC_ESC),
-             KC_PGUP,
+             KC_LGUI,
              KC_PGDN, RSFT_T(KC_TAB), RALT_T(KC_ENT)
     ),
 /* Keymap 1: Symbol Layer
